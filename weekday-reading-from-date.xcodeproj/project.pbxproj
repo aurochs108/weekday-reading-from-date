@@ -14,6 +14,9 @@
 		6FD959C62C07D1A2007A31E2 /* weekday_reading_from_dateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD959C52C07D1A2007A31E2 /* weekday_reading_from_dateTests.swift */; };
 		6FD959D02C07D1A2007A31E2 /* weekday_reading_from_dateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD959CF2C07D1A2007A31E2 /* weekday_reading_from_dateUITests.swift */; };
 		6FD959D22C07D1A2007A31E2 /* weekday_reading_from_dateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD959D12C07D1A2007A31E2 /* weekday_reading_from_dateUITestsLaunchTests.swift */; };
+		6FD959E12C07D295007A31E2 /* Weekday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD959E02C07D295007A31E2 /* Weekday.swift */; };
+		6FD959E32C07D37D007A31E2 /* WeekdayReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD959E22C07D37D007A31E2 /* WeekdayReader.swift */; };
+		6FD959E62C07D961007A31E2 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD959E52C07D961007A31E2 /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		6FD959CB2C07D1A2007A31E2 /* weekday-reading-from-dateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "weekday-reading-from-dateUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD959CF2C07D1A2007A31E2 /* weekday_reading_from_dateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weekday_reading_from_dateUITests.swift; sourceTree = "<group>"; };
 		6FD959D12C07D1A2007A31E2 /* weekday_reading_from_dateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weekday_reading_from_dateUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6FD959E02C07D295007A31E2 /* Weekday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weekday.swift; sourceTree = "<group>"; };
+		6FD959E22C07D37D007A31E2 /* WeekdayReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayReader.swift; sourceTree = "<group>"; };
+		6FD959E52C07D961007A31E2 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +101,10 @@
 		6FD959B22C07D19E007A31E2 /* weekday-reading-from-date */ = {
 			isa = PBXGroup;
 			children = (
+				6FD959E42C07D952007A31E2 /* ContentView */,
+				6FD959DF2C07D288007A31E2 /* Model */,
+				6FD959DE2C07D280007A31E2 /* Logic */,
 				6FD959B32C07D19E007A31E2 /* weekday_reading_from_dateApp.swift */,
-				6FD959B52C07D19E007A31E2 /* ContentView.swift */,
 				6FD959B72C07D1A2007A31E2 /* Assets.xcassets */,
 				6FD959B92C07D1A2007A31E2 /* weekday_reading_from_date.entitlements */,
 				6FD959BA2C07D1A2007A31E2 /* Preview Content */,
@@ -127,6 +135,31 @@
 				6FD959D12C07D1A2007A31E2 /* weekday_reading_from_dateUITestsLaunchTests.swift */,
 			);
 			path = "weekday-reading-from-dateUITests";
+			sourceTree = "<group>";
+		};
+		6FD959DE2C07D280007A31E2 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				6FD959E22C07D37D007A31E2 /* WeekdayReader.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		6FD959DF2C07D288007A31E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6FD959E02C07D295007A31E2 /* Weekday.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6FD959E42C07D952007A31E2 /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				6FD959B52C07D19E007A31E2 /* ContentView.swift */,
+				6FD959E52C07D961007A31E2 /* ContentViewModel.swift */,
+			);
+			path = ContentView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +294,9 @@
 			files = (
 				6FD959B62C07D19E007A31E2 /* ContentView.swift in Sources */,
 				6FD959B42C07D19E007A31E2 /* weekday_reading_from_dateApp.swift in Sources */,
+				6FD959E12C07D295007A31E2 /* Weekday.swift in Sources */,
+				6FD959E32C07D37D007A31E2 /* WeekdayReader.swift in Sources */,
+				6FD959E62C07D961007A31E2 /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

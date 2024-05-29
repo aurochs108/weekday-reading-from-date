@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    private let viewModel = ContentViewModel()
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Promotion reader")
+                .font(.title2)
+            if let weekday = viewModel.getCurrentWeekday() {
+                Text("\(weekday)")
+            }
         }
         .padding()
     }
