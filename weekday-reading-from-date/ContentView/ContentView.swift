@@ -22,8 +22,11 @@ struct ContentView: View {
     private func daySwitcher() -> some View {
         TabView(selection: $viewModel.selectedDay) {
             ForEach(Weekday.allCases, id: \.self) { weekday in
-                Text("\(weekday)")
-                    .tag(weekday.hashValue)
+                VStack {
+                    Text("\(weekday)")
+                    Text(viewModel.getPromotion())
+                }
+                .tag(weekday)
             }
         }
         .tabViewStyle(.page)

@@ -10,21 +10,9 @@ import Foundation
 final class WeekdayReader {
     private let calendar = Calendar(identifier: .gregorian)
 
-    func getWeekday(daysToAdd: Int) -> Weekday? {
+    func getCurrentWeekday() -> Weekday? {
         let now = Date()
-
-        let date: Date?
-        if daysToAdd == 0 {
-            date = now
-        } else {
-            date = Calendar.current.date(
-                byAdding: .day,
-                value: daysToAdd,
-                to: now
-            )
-        }
-        guard let date else { return nil }
-        let weekdayNumber = calendar.component(.weekday, from: date)
+        let weekdayNumber = calendar.component(.weekday, from: now)
         return mapWeekdayNumberToWeekday(weekdayNumber)
     }
     
