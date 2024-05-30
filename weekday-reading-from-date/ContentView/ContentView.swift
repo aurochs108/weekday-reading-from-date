@@ -8,19 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
-    private let viewModel = ContentViewModel()
+    @StateObject private var viewModel = ContentViewModel()
     var body: some View {
         VStack {
             Text("Promotion reader")
                 .font(.title2)
-            if let weekday = viewModel.getCurrentWeekday() {
+            daySwitcher()
+            Spacer()
+        }
+    }
+    
+    @ViewBuilder
+    private func daySwitcher() -> some View {
+        TabView(selection: $viewModel.selectedDay) {
+            ForEach(Weekday.allCases, id: \.self) { weekday in
                 Text("\(weekday)")
+                    .tag(weekday.hashValue)
             }
         }
-        .padding()
+        .tabViewStyle(.page)
     }
-}
-
-#Preview {
-    ContentView()
 }

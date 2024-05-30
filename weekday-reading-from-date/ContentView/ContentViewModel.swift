@@ -7,8 +7,13 @@
 
 import Foundation
 
-final class ContentViewModel {
+final class ContentViewModel: ObservableObject {
+    @Published var selectedDay: Weekday = .monday
     private let weekdayReader = WeekdayReader()
+    
+    init() {
+        self.selectedDay = weekdayReader.getWeekday(daysToAdd: 0) ?? .monday
+    }
     
     func getCurrentWeekday() -> Weekday? {
         weekdayReader.getWeekday(daysToAdd: 0)
