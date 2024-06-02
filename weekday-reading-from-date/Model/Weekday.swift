@@ -15,4 +15,9 @@ enum Weekday: CaseIterable, Hashable {
     case friday
     case saturday
     case sunday
+    
+    var localisable: String {
+        let formatter = DateFormatter()
+        return formatter.weekdaySymbols.first ?? ""
+    }
 }

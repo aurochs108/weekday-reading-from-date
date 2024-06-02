@@ -24,7 +24,10 @@ struct ContentView: View {
             ForEach(Weekday.allCases, id: \.self) { weekday in
                 VStack {
                     Text("\(weekday)")
-                    Text(viewModel.getPromotion())
+                    Text(viewModel.getPromotion(for: weekday))
+                    if let localisable = viewModel.getLocalisable(for: weekday) {
+                        Text(localisable)
+                    }
                 }
                 .tag(weekday)
             }

@@ -15,7 +15,7 @@ final class ContentViewModel: ObservableObject {
         self.selectedDay = weekdayReader.getCurrentWeekday() ?? .monday
     }
     
-    func getPromotion() -> String {
+    func getPromotion(for selectedDay: Weekday) -> String {
         switch selectedDay {
         case .monday:
             "2 coctails for 1"
@@ -30,7 +30,11 @@ final class ContentViewModel: ObservableObject {
         case .saturday:
             "Buy 10 get 1 free"
         case .sunday:
-            "Pay at least 100$ get free coffee"
+            "Pay at least 100$ and get free coffee"
         }
+    }
+    
+    func getLocalisable(for weekday: Weekday) -> String? {
+        weekdayReader.getLocalisable(for: weekday)
     }
 }
