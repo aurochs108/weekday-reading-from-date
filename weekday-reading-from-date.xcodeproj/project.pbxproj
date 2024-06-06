@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6FC833F72C1266A4004CB906 /* WeekdayReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC833F62C1266A4004CB906 /* WeekdayReaderTests.swift */; };
+		6FC833FA2C126831004CB906 /* CurrentDateProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC833F92C126831004CB906 /* CurrentDateProviderProtocol.swift */; };
+		6FC833FC2C126850004CB906 /* CurrentDateProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC833FB2C126850004CB906 /* CurrentDateProvider.swift */; };
+		6FC833FF2C126874004CB906 /* CurrentDateProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC833FE2C126874004CB906 /* CurrentDateProviderMock.swift */; };
 		6FD959B42C07D19E007A31E2 /* weekday_reading_from_dateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD959B32C07D19E007A31E2 /* weekday_reading_from_dateApp.swift */; };
 		6FD959B62C07D19E007A31E2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD959B52C07D19E007A31E2 /* ContentView.swift */; };
 		6FD959B82C07D1A2007A31E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD959B72C07D1A2007A31E2 /* Assets.xcassets */; };
 		6FD959BC2C07D1A2007A31E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD959BB2C07D1A2007A31E2 /* Preview Assets.xcassets */; };
-		6FD959C62C07D1A2007A31E2 /* weekday_reading_from_dateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD959C52C07D1A2007A31E2 /* weekday_reading_from_dateTests.swift */; };
-		6FD959D02C07D1A2007A31E2 /* weekday_reading_from_dateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD959CF2C07D1A2007A31E2 /* weekday_reading_from_dateUITests.swift */; };
-		6FD959D22C07D1A2007A31E2 /* weekday_reading_from_dateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD959D12C07D1A2007A31E2 /* weekday_reading_from_dateUITestsLaunchTests.swift */; };
 		6FD959E12C07D295007A31E2 /* Weekday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD959E02C07D295007A31E2 /* Weekday.swift */; };
 		6FD959E32C07D37D007A31E2 /* WeekdayReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD959E22C07D37D007A31E2 /* WeekdayReader.swift */; };
 		6FD959E62C07D961007A31E2 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD959E52C07D961007A31E2 /* ContentViewModel.swift */; };
@@ -29,16 +30,13 @@
 			remoteGlobalIDString = 6FD959AF2C07D19E007A31E2;
 			remoteInfo = "weekday-reading-from-date";
 		};
-		6FD959CC2C07D1A2007A31E2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6FD959A82C07D19E007A31E2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6FD959AF2C07D19E007A31E2;
-			remoteInfo = "weekday-reading-from-date";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6FC833F62C1266A4004CB906 /* WeekdayReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayReaderTests.swift; sourceTree = "<group>"; };
+		6FC833F92C126831004CB906 /* CurrentDateProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentDateProviderProtocol.swift; sourceTree = "<group>"; };
+		6FC833FB2C126850004CB906 /* CurrentDateProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentDateProvider.swift; sourceTree = "<group>"; };
+		6FC833FE2C126874004CB906 /* CurrentDateProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentDateProviderMock.swift; sourceTree = "<group>"; };
 		6FD959B02C07D19E007A31E2 /* weekday-reading-from-date.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "weekday-reading-from-date.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD959B32C07D19E007A31E2 /* weekday_reading_from_dateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weekday_reading_from_dateApp.swift; sourceTree = "<group>"; };
 		6FD959B52C07D19E007A31E2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,10 +44,6 @@
 		6FD959B92C07D1A2007A31E2 /* weekday_reading_from_date.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = weekday_reading_from_date.entitlements; sourceTree = "<group>"; };
 		6FD959BB2C07D1A2007A31E2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6FD959C12C07D1A2007A31E2 /* weekday-reading-from-dateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "weekday-reading-from-dateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6FD959C52C07D1A2007A31E2 /* weekday_reading_from_dateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weekday_reading_from_dateTests.swift; sourceTree = "<group>"; };
-		6FD959CB2C07D1A2007A31E2 /* weekday-reading-from-dateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "weekday-reading-from-dateUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6FD959CF2C07D1A2007A31E2 /* weekday_reading_from_dateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weekday_reading_from_dateUITests.swift; sourceTree = "<group>"; };
-		6FD959D12C07D1A2007A31E2 /* weekday_reading_from_dateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weekday_reading_from_dateUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6FD959E02C07D295007A31E2 /* Weekday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weekday.swift; sourceTree = "<group>"; };
 		6FD959E22C07D37D007A31E2 /* WeekdayReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayReader.swift; sourceTree = "<group>"; };
 		6FD959E52C07D961007A31E2 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
@@ -72,22 +66,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6FD959C82C07D1A2007A31E2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6FC833F52C12668A004CB906 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				6FC833F62C1266A4004CB906 /* WeekdayReaderTests.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		6FC833F82C126820004CB906 /* CurrentDateProvider */ = {
+			isa = PBXGroup;
+			children = (
+				6FC833F92C126831004CB906 /* CurrentDateProviderProtocol.swift */,
+				6FC833FB2C126850004CB906 /* CurrentDateProvider.swift */,
+			);
+			path = CurrentDateProvider;
+			sourceTree = "<group>";
+		};
+		6FC833FD2C126868004CB906 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				6FC833FE2C126874004CB906 /* CurrentDateProviderMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		6FD959A72C07D19E007A31E2 = {
 			isa = PBXGroup;
 			children = (
 				6FD959B22C07D19E007A31E2 /* weekday-reading-from-date */,
 				6FD959C42C07D1A2007A31E2 /* weekday-reading-from-dateTests */,
-				6FD959CE2C07D1A2007A31E2 /* weekday-reading-from-dateUITests */,
 				6FD959B12C07D19E007A31E2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,7 +108,6 @@
 			children = (
 				6FD959B02C07D19E007A31E2 /* weekday-reading-from-date.app */,
 				6FD959C12C07D1A2007A31E2 /* weekday-reading-from-dateTests.xctest */,
-				6FD959CB2C07D1A2007A31E2 /* weekday-reading-from-dateUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,23 +138,16 @@
 		6FD959C42C07D1A2007A31E2 /* weekday-reading-from-dateTests */ = {
 			isa = PBXGroup;
 			children = (
-				6FD959C52C07D1A2007A31E2 /* weekday_reading_from_dateTests.swift */,
+				6FC833FD2C126868004CB906 /* Mocks */,
+				6FC833F52C12668A004CB906 /* Logic */,
 			);
 			path = "weekday-reading-from-dateTests";
-			sourceTree = "<group>";
-		};
-		6FD959CE2C07D1A2007A31E2 /* weekday-reading-from-dateUITests */ = {
-			isa = PBXGroup;
-			children = (
-				6FD959CF2C07D1A2007A31E2 /* weekday_reading_from_dateUITests.swift */,
-				6FD959D12C07D1A2007A31E2 /* weekday_reading_from_dateUITestsLaunchTests.swift */,
-			);
-			path = "weekday-reading-from-dateUITests";
 			sourceTree = "<group>";
 		};
 		6FD959DE2C07D280007A31E2 /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				6FC833F82C126820004CB906 /* CurrentDateProvider */,
 				6FD959E22C07D37D007A31E2 /* WeekdayReader.swift */,
 			);
 			path = Logic;
@@ -214,24 +217,6 @@
 			productReference = 6FD959C12C07D1A2007A31E2 /* weekday-reading-from-dateTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		6FD959CA2C07D1A2007A31E2 /* weekday-reading-from-dateUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6FD959DB2C07D1A2007A31E2 /* Build configuration list for PBXNativeTarget "weekday-reading-from-dateUITests" */;
-			buildPhases = (
-				6FD959C72C07D1A2007A31E2 /* Sources */,
-				6FD959C82C07D1A2007A31E2 /* Frameworks */,
-				6FD959C92C07D1A2007A31E2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6FD959CD2C07D1A2007A31E2 /* PBXTargetDependency */,
-			);
-			name = "weekday-reading-from-dateUITests";
-			productName = "weekday-reading-from-dateUITests";
-			productReference = 6FD959CB2C07D1A2007A31E2 /* weekday-reading-from-dateUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -247,10 +232,7 @@
 					};
 					6FD959C02C07D1A2007A31E2 = {
 						CreatedOnToolsVersion = 15.4;
-						TestTargetID = 6FD959AF2C07D19E007A31E2;
-					};
-					6FD959CA2C07D1A2007A31E2 = {
-						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 						TestTargetID = 6FD959AF2C07D19E007A31E2;
 					};
 				};
@@ -271,7 +253,6 @@
 			targets = (
 				6FD959AF2C07D19E007A31E2 /* weekday-reading-from-date */,
 				6FD959C02C07D1A2007A31E2 /* weekday-reading-from-dateTests */,
-				6FD959CA2C07D1A2007A31E2 /* weekday-reading-from-dateUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -295,13 +276,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6FD959C92C07D1A2007A31E2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -309,11 +283,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FC833FA2C126831004CB906 /* CurrentDateProviderProtocol.swift in Sources */,
 				6FD959B62C07D19E007A31E2 /* ContentView.swift in Sources */,
 				6FD959B42C07D19E007A31E2 /* weekday_reading_from_dateApp.swift in Sources */,
 				6FD959E12C07D295007A31E2 /* Weekday.swift in Sources */,
 				6FD959E32C07D37D007A31E2 /* WeekdayReader.swift in Sources */,
 				6FD959E62C07D961007A31E2 /* ContentViewModel.swift in Sources */,
+				6FC833FC2C126850004CB906 /* CurrentDateProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,16 +297,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FD959C62C07D1A2007A31E2 /* weekday_reading_from_dateTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6FD959C72C07D1A2007A31E2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6FD959D22C07D1A2007A31E2 /* weekday_reading_from_dateUITestsLaunchTests.swift in Sources */,
-				6FD959D02C07D1A2007A31E2 /* weekday_reading_from_dateUITests.swift in Sources */,
+				6FC833FF2C126874004CB906 /* CurrentDateProviderMock.swift in Sources */,
+				6FC833F72C1266A4004CB906 /* WeekdayReaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,11 +309,6 @@
 			isa = PBXTargetDependency;
 			target = 6FD959AF2C07D19E007A31E2 /* weekday-reading-from-date */;
 			targetProxy = 6FD959C22C07D1A2007A31E2 /* PBXContainerItemProxy */;
-		};
-		6FD959CD2C07D1A2007A31E2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6FD959AF2C07D19E007A31E2 /* weekday-reading-from-date */;
-			targetProxy = 6FD959CC2C07D1A2007A31E2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -564,6 +527,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 58DC92SP2K;
@@ -576,6 +540,7 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/weekday-reading-from-date.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/weekday-reading-from-date";
@@ -587,6 +552,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 58DC92SP2K;
@@ -602,50 +568,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/weekday-reading-from-date.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/weekday-reading-from-date";
-			};
-			name = Release;
-		};
-		6FD959DC2C07D1A2007A31E2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 58DC92SP2K;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.navyblueswift.weekday-reading-from-dateUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "weekday-reading-from-date";
-			};
-			name = Debug;
-		};
-		6FD959DD2C07D1A2007A31E2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 58DC92SP2K;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.navyblueswift.weekday-reading-from-dateUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "weekday-reading-from-date";
 			};
 			name = Release;
 		};
@@ -675,15 +597,6 @@
 			buildConfigurations = (
 				6FD959D92C07D1A2007A31E2 /* Debug */,
 				6FD959DA2C07D1A2007A31E2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6FD959DB2C07D1A2007A31E2 /* Build configuration list for PBXNativeTarget "weekday-reading-from-dateUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6FD959DC2C07D1A2007A31E2 /* Debug */,
-				6FD959DD2C07D1A2007A31E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -9,13 +9,25 @@ import Foundation
 
 final class WeekdayReader {
     private let calendar = Calendar(identifier: .gregorian)
+    private let currentDateProvider: CurrentDateProviderProtocol
     
-    init() {
+    init(
+        currentDateProvider: CurrentDateProviderProtocol = CurrentDateProvider()
+    ) {
+        self.currentDateProvider = currentDateProvider
+
         printFirstWeekdayOfCalendars()
+    }
+    
+    func printFirstWeekdayOfCalendars() {
+        print("Calendar.current: \(Calendar.current.identifier) - \(Calendar.current.firstWeekday)")
+        print("Calendar .gregorian - \(Calendar(identifier: .gregorian).firstWeekday)")
+        print("Calendar .iso8601 - \(Calendar(identifier: .iso8601).firstWeekday)")
+        print("Calendar .buddhist - \(Calendar(identifier: .buddhist).firstWeekday)")
     }
 
     func getCurrentWeekday() -> Weekday? {
-        let now = Date()
+        let now = currentDateProvider.getDate()
         let weekdayNumber = calendar.component(.weekday, from: now)
         return mapWeekdayNumberToWeekday(weekdayNumber)
     }
@@ -70,20 +82,5 @@ final class WeekdayReader {
             .weekday(.wide)
             .locale(Locale.current)
         return date.formatted(format)
-    }
-    
-    func localisable() -> String {
-        let format = Date.FormatStyle()
-            .weekday(.wide)
-            .locale(Locale.current)
-        return Date()
-            .formatted(format)
-    }
-    
-    func printFirstWeekdayOfCalendars() {
-        print("Calendar.current: \(Calendar.current.identifier) - \(Calendar.current.firstWeekday)")
-        print("Calendar .gregorian - \(Calendar(identifier: .gregorian).firstWeekday)")
-        print("Calendar .iso8601 - \(Calendar(identifier: .iso8601).firstWeekday)")
-        print("Calendar .buddhist - \(Calendar(identifier: .buddhist).firstWeekday)")
     }
 }

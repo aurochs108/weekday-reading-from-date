@@ -23,11 +23,10 @@ struct ContentView: View {
         TabView(selection: $viewModel.selectedDay) {
             ForEach(Weekday.allCases, id: \.self) { weekday in
                 VStack {
-                    Text("\(weekday)")
-                    Text(viewModel.getPromotion(for: weekday))
                     if let localisable = viewModel.getLocalisable(for: weekday) {
                         Text(localisable)
                     }
+                    Text(viewModel.getPromotion(for: weekday))
                 }
                 .tag(weekday)
             }

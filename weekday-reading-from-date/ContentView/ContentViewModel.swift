@@ -18,19 +18,19 @@ final class ContentViewModel: ObservableObject {
     func getPromotion(for selectedDay: Weekday) -> String {
         switch selectedDay {
         case .monday:
-            "2 coctails for 1"
+            "Buy 2 🍸 pay for 1"
         case .tuesday:
-            "Big coctail 50% off"
+            "Big 🍸 50% off"
         case .wednesday:
-            "Red coctail 25% off till 4PM"
+            "Red 🍸 25% off till 4PM"
         case .thursday:
-            "Blue coctail 25% off till 3PM"
+            "Blue 🍸 25% off till 3PM"
         case .friday:
-            "Buy 10 pay for 9"
+            "Buy 10 ☕️ pay for 9"
         case .saturday:
-            "Buy 10 get 1 free"
+            "Buy 10 ☕️ get 1 free"
         case .sunday:
-            "Pay at least 100$ and get free coffee"
+            "Pay at least 100$ and get free ☕️"
         }
     }
     
